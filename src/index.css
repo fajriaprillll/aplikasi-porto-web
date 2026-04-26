@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-surface: #0a0a0a;
+  --color-primary: #ffffff;
+  --color-secondary: #111111;
+  --color-accent-indigo: #6366f1;
+  --color-accent-purple: #a855f7;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-reveal: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  @keyframes reveal {
+    0% { transform: translateY(100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-400 antialiased selection:bg-indigo-500/20;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Offset for sticky navbar when scrolling to anchored sections */
+  section[id] {
+    scroll-margin-top: 68px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tighter text-white;
+  }
+}
+
+@layer components {
+  .elegant-card {
+    @apply bg-surface/50 backdrop-blur-xl border border-white/[0.05] rounded-3xl transition-all duration-500 hover:border-indigo-500/20 hover:bg-surface/80 hover:shadow-[0_0_50px_-12px_rgba(99,102,241,0.15)];
+  }
+
+  .btn-elegant {
+    @apply bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)];
+  }
+
+  .btn-elegant-outline {
+    @apply border border-white/10 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-white/5 hover:border-white/30;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 pt-24 pb-32;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-zinc-700 transition-colors;
+}
+
+/* Elegant Grain Overlay */
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Spotlights */
+.spotlight {
+  background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
