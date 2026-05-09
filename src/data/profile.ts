@@ -1,18 +1,24 @@
 export const profileData = {
   name: "Fajri Apriliansyah",
   role: "Fullstack Web Developer (Backend-Oriented) & Lulusan Informatika",
-  tagline: "Membangun aplikasi web end-to-end dengan fokus pada arsitektur backend yang scalable, desain REST API yang aman, dan struktur database yang teroptimasi—memastikan sistem tidak hanya terlihat bagus, tapi juga tangguh di balik layar.",
+  tagline: "Membangun aplikasi web end-to-end dengan fokus pada arsitektur backend yang scalable. Saat ini sedang memimpin pengembangan Hyundai DMS (Dealer Management System) untuk digitalisasi operasional dealership otomotif.",
   about: {
-    description: "Saya adalah Fullstack Web Developer lulusan S1 Informatika dengan spesialisasi di arsitektur backend. Fokus utama saya adalah merancang skema database relasional (MySQL), membangun REST API yang aman dan terstruktur (Node.js/Express), serta memastikan integritas aliran data hingga ke sisi client (React.js).",
-    subDescription: "Pengalaman terbesar saya adalah membangun arsitektur sistem pemesanan QR Code secara end-to-end. Tantangan utamanya bukan pada UI, melainkan bagaimana menangani asinkronitas webhook dari Payment Gateway, menjaga konsistensi data transaksi, dan mem-push notifikasi real-time ke pengguna tanpa membebani server. Saya menggunakan AI dalam workflow saya untuk mempercepat boilerplate dan review kode, sehingga saya bisa fokus merancang arsitektur sistem yang robust dan siap di-scale.",
+    description: "Saya adalah Fullstack Web Developer lulusan S1 Informatika dengan spesialisasi di arsitektur backend. Saat ini, saya berfokus mengembangkan Hyundai DMS, sebuah platform ERP enterprise-grade yang menangani alur kerja operasional dealer dari inventaris hingga layanan purna jual.",
+    subDescription: "Keahlian saya mencakup perancangan sistem Full-Stack modern menggunakan React.js, Node.js, dan PostgreSQL. Saya berdedikasi membangun aplikasi yang tidak hanya memiliki performa tinggi di balik layar, tetapi juga menyajikan pengalaman pengguna kelas eksekutif dengan standar visual yang premium.",
     image: "/profile/pict.jpg"
   },
   skills: {
-    frontend: ["JavaScript", "Node.js (Express.js)", "React.js", "MySQL", "REST API", "Git & GitHub", "Tailwind CSS"],
-    tools: ["Payment Gateway Integration", "Real-time Notification", "QR Code System", "Database Design"],
-    learning: ["TypeScript", "Next.js"]
+    frontend: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "TanStack Query", "Shadcn UI", "Vite"],
+    tools: ["Node.js", "Express.js", "PostgreSQL", "Drizzle ORM", "Passport.js", "REST API", "WebSocket"],
+    learning: ["Next.js", "Microservices"]
   },
   experience: [
+    {
+      role: "Full Stack Developer",
+      company: "Hyundai Adisucipto Yogyakarta",
+      period: "April 2026 – Present",
+      description: "Membangun arsitektur Full-Stack untuk Hyundai DMS (Dealer Management System) guna mengoptimalkan operasional dealership secara end-to-end.\n• Mengembangkan sistem ERP skala enterprise menggunakan React.js, Node.js, dan PostgreSQL dengan standar visual premium.\n• Merancang Executive Dashboard untuk monitoring KPI operasional, sales, dan aftersales secara real-time.\n• Mengimplementasikan fitur pelacakan inventaris unit/suku cadang dan alur kerja servis yang terintegrasi.\n• Mengoptimalkan performa sistem dan keamanan data menggunakan TypeScript serta sistem autentikasi modern."
+    },
     {
       role: "Arsitek & Fullstack Developer",
       company: "Sistem Pemesanan QR Code (Tugas Akhir)",
