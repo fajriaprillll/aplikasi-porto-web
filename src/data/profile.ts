@@ -1,10 +1,10 @@
 export const profileData = {
   name: "Fajri Apriliansyah",
   role: "Fullstack Web Developer (Backend-Oriented) & Lulusan Informatika",
-  tagline: "Membangun aplikasi web end-to-end dengan fokus pada arsitektur backend yang scalable. Saat ini sedang memimpin pengembangan Hyundai DMS (Dealer Management System) untuk digitalisasi operasional dealership otomotif.",
+  tagline: "Full-stack Developer yang berfokus pada pengembangan sistem backend dan solusi operasional untuk bisnis yang lebih efisien dan terstruktur.",
   about: {
-    description: "Saya adalah Fullstack Web Developer lulusan S1 Informatika dengan spesialisasi di arsitektur backend. Saat ini, saya berfokus mengembangkan Hyundai DMS, sebuah platform ERP enterprise-grade yang menangani alur kerja operasional dealer dari inventaris hingga layanan purna jual.",
-    subDescription: "Keahlian saya mencakup perancangan sistem Full-Stack modern menggunakan React.js, Node.js, dan PostgreSQL. Saya berdedikasi membangun aplikasi yang tidak hanya memiliki performa tinggi di balik layar, tetapi juga menyajikan pengalaman pengguna kelas eksekutif dengan standar visual yang premium.",
+    description: "Saya adalah Full-stack Developer yang fokus pada pengembangan sistem backend, API, dan solusi operasional untuk membantu proses bisnis berjalan lebih efisien dan terstruktur. Saat ini saya terlibat dalam pengembangan sistem Enterprise Resource Planning (ERP) skala besar, mulai dari perancangan alur kerja, integrasi database, hingga pengembangan fitur berbasis web.",
+    subDescription: "Saya terbiasa bekerja di sisi frontend maupun backend menggunakan React.js, Express.js, TypeScript, dan REST API, dengan pendekatan yang mengutamakan performa, skalabilitas, dan kemudahan pengembangan jangka panjang.",
     image: "/profile/pict.jpg"
   },
   skills: {
@@ -17,7 +17,7 @@ export const profileData = {
       role: "Full Stack Developer",
       company: "Hyundai Adisucipto Yogyakarta",
       period: "April 2026 – Present",
-      description: "Membangun arsitektur Full-Stack untuk Hyundai DMS (Dealer Management System) guna mengoptimalkan operasional dealership secara end-to-end.\n• Mengembangkan sistem ERP skala enterprise menggunakan React.js, Node.js, dan PostgreSQL dengan standar visual premium.\n• Merancang Executive Dashboard untuk monitoring KPI operasional, sales, dan aftersales secara real-time.\n• Mengimplementasikan fitur pelacakan inventaris unit/suku cadang dan alur kerja servis yang terintegrasi.\n• Mengoptimalkan performa sistem dan keamanan data menggunakan TypeScript serta sistem autentikasi modern."
+      description: "Bertanggung jawab dalam merancang dan mengembangkan sistem ERP (Enterprise Resource Planning) skala besar guna mengoptimalkan operasional bisnis secara menyeluruh.\n• Membangun arsitektur Full-Stack menggunakan React.js, Node.js, dan PostgreSQL dengan fokus pada skalabilitas serta keamanan data tingkat enterprise.\n• Merancang Executive Dashboard interaktif untuk monitoring KPI operasional secara real-time guna mendukung pengambilan keputusan strategis.\n• Mengembangkan modul manajemen inventaris dan alur kerja terintegrasi yang meningkatkan efisiensi proses bisnis harian.\n• Mengoptimalkan performa aplikasi dan mengimplementasikan sistem autentikasi modern untuk menjamin integritas data perusahaan."
     },
     {
       role: "Arsitek & Fullstack Developer",

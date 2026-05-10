@@ -171,7 +171,7 @@ const LandingPage = () => {
             <SpotlightCard className="lg:col-span-7 elegant-card p-12 flex flex-col justify-between group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-indigo-500/10 transition-colors" />
               <div className="relative z-10">
-                <h2 className="text-4xl font-bold mb-8 tracking-tighter">THE STORY</h2>
+                <h2 className="text-4xl font-bold mb-8 tracking-tighter">BEHIND THE CODE</h2>
                 <motion.div 
                   initial="hidden"
                   whileInView="visible"
@@ -182,10 +182,18 @@ const LandingPage = () => {
                   }}
                   className="space-y-6 text-zinc-400 text-sm md:text-lg leading-relaxed whitespace-pre-line"
                 >
-                  <motion.p variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.6, ease: "easeOut" }}>
+                  <motion.p 
+                    variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} 
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="text-justify indent-8 md:indent-12"
+                  >
                     {profileData.about.description}
                   </motion.p>
-                  <motion.p variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.6, ease: "easeOut" }}>
+                  <motion.p 
+                    variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} 
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="text-justify indent-8 md:indent-12"
+                  >
                     {profileData.about.subDescription}
                   </motion.p>
                 </motion.div>
@@ -229,8 +237,8 @@ const LandingPage = () => {
                      </div>
                      <div className="text-zinc-700 font-bold text-xs uppercase tracking-widest group-hover:text-white transition-colors">01</div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Clean Code</h3>
-                  <p className="text-zinc-500 text-sm">Writing maintainable, scalable, and optimized codebases with focus on quality.</p>
+                  <h3 className="text-2xl font-bold mb-3">Problem Solver</h3>
+                  <p className="text-zinc-500 text-sm">Berfokus pada pemecahan masalah kompleks melalui arsitektur sistem yang efisien dan andal.</p>
                 </div>
                 <div className="mt-8 pt-8 border-t border-white/5 flex items-center justify-between">
                    <span className="text-xs font-bold text-zinc-700 uppercase tracking-widest">Efficiency</span>
@@ -266,7 +274,7 @@ const LandingPage = () => {
                   <div className="absolute top-0 left-[-6px] w-3 h-3 bg-zinc-800 rounded-full group-hover:bg-indigo-400 group-hover:shadow-[0_0_10px_rgba(129,140,248,0.8)] transition-all duration-500" />
                   <div className="text-zinc-600 font-bold text-xs mb-2 tracking-widest uppercase">{exp.period}</div>
                   <h3 className="text-3xl md:text-4xl font-bold mb-4 tracking-tighter">{exp.role} — <span className="text-zinc-600">{exp.company}</span></h3>
-                  <p className="text-zinc-500 text-sm md:text-lg leading-relaxed whitespace-pre-line">{exp.description}</p>
+                  <p className="text-zinc-500 text-sm md:text-lg leading-relaxed whitespace-pre-line text-justify">{exp.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -284,7 +292,7 @@ const LandingPage = () => {
               <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter leading-[0.9]">
                 <BlurText text="LET'S" delay={100} direction="bottom" /><br /><BlurText text="CONNECT." delay={100} direction="bottom" />
               </h2>
-              <p className="text-zinc-500 text-base md:text-xl mb-10 leading-relaxed max-w-md">
+              <p className="text-zinc-500 text-base md:text-xl mb-10 leading-relaxed max-w-md text-justify indent-8 md:indent-12">
                 Saya selalu terbuka untuk ide-ide baru, peluang kerja, atau sekadar berdiskusi tentang teknologi.
               </p>
               

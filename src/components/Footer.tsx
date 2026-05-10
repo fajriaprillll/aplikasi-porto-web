@@ -130,14 +130,14 @@ export const SocialSidebar = () => (
 
 // ── Footer ──────────────────────────────────────────────────────
 const Footer = () => (
-  <footer className="border-t border-white/[0.05] py-24 bg-transparent">
-    <div className="section-container flex flex-col md:flex-row justify-between items-start gap-16">
+  <footer className="border-t border-white/[0.05] py-16 bg-transparent">
+    <div className="section-container flex flex-col md:flex-row justify-between items-start md:items-center gap-10 md:gap-16">
       {/* Branding */}
-      <div className="max-w-sm">
-        <h3 className="text-3xl font-black mb-4 tracking-tighter text-white">
+      <div className="max-w-sm flex-1">
+        <h3 className="text-2xl md:text-3xl font-black mb-4 tracking-tighter text-white">
           {profileData.name.toUpperCase()}
         </h3>
-        <p className="text-zinc-600 text-sm leading-relaxed mb-6">
+        <p className="text-zinc-600 text-xs md:text-sm leading-relaxed mb-6">
           Fullstack Web Developer — membangun sistem yang solid dari backend hingga tampilan.
         </p>
         <p className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-700">
@@ -146,18 +146,18 @@ const Footer = () => (
       </div>
 
       {/* Branding & Status */}
-      <div className="flex flex-col gap-6 max-w-xs">
+      <div className="flex flex-col gap-4 md:gap-6 max-w-xs flex-1 md:items-center md:text-center">
         <div className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-700">About</div>
-        <p className="text-2xl font-bold tracking-tighter text-white leading-snug">
+        <p className="text-xl md:text-2xl font-bold tracking-tighter text-white leading-snug">
           Saya bangun sistem,<br />bukan sekadar tampilan.
         </p>
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5 justify-start md:justify-center">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
           </span>
           <span className="text-[11px] font-bold text-zinc-500 tracking-wide">
-            Available · Full-time &amp; Remote
+            Currently at Hyundai Adisucipto · Active Development
           </span>
         </div>
       </div>
@@ -168,7 +168,7 @@ const Footer = () => (
         <div className="text-xl font-bold tracking-tighter text-white">
           {profileData.contact.location.toUpperCase()}
         </div>
-        <div className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600">Open to Remote Work</div>
+        <div className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-600">Enterprise Solutions Focus</div>
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

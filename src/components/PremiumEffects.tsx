@@ -344,7 +344,7 @@ export const SpaceBackground = () => {
             transform: ["translate(0%, 0%) scale(1)", "translate(10%, 15%) scale(1.1)", "translate(-5%, -5%) scale(0.9)", "translate(0%, 0%) scale(1)"]
           }}
           transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#111827] blur-[150px] will-change-transform"
+          className="absolute top-[-5%] left-[-15%] w-[40vw] md:w-[50vw] h-[40vw] md:h-[50vw] rounded-full bg-[#111827]/30 blur-[100px] md:blur-[150px] will-change-transform"
         />
         <motion.div 
           animate={{ 
